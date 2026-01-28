@@ -550,3 +550,111 @@ section {
 .hero .container > *:nth-child(3) { animation-delay: 0.3s; }
 .hero .container > *:nth-child(4) { animation-delay: 0.4s; }
 .hero .container > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* ===== Studio Page ===== */
+.studio-hero {
+  min-height: 60vh;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Apps Section ===== */
+.apps {
+  background-color: var(--bg-secondary);
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  color: var(--text-primary);
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.app-card__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  box-shadow: var(--shadow);
+}
+
+.app-card__content {
+  flex: 1;
+}
+
+.app-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-card__description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.app-card__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.app-card:hover .app-card__link {
+  color: var(--accent-hover);
+}
+
+/* ===== Contact Section ===== */
+.contact {
+  background-color: var(--bg-primary);
+}
+
+.contact .contact-box {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .app-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app-card__icon {
+    width: 100px;
+    height: 100px;
+  }
+}

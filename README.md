@@ -1,6 +1,6 @@
 # SMT Labs Studio Website
 
-Official website for SMT Labs Studio, featuring the **Calculator for Biwenger** app.
+Official website for SMT Labs Studio.
 
 ## Live Site
 
@@ -10,19 +10,15 @@ Official website for SMT Labs Studio, featuring the **Calculator for Biwenger** 
 
 ```
 smt-labs-studio.github.io/
-├── index.html                    # Landing page
-├── terms-of-use/
-│   └── index.html                # Terms of Use
-├── privacy-policy/
-│   └── index.html                # Privacy Policy
+├── index.html                              # SMT Labs Studio homepage
+├── calculator-for-biwenger/
+│   ├── index.html                          # App landing page
+│   ├── terms-of-use/index.html             # Terms of Use
+│   └── privacy-policy/index.html           # Privacy Policy
 ├── assets/
-│   ├── css/
-│   │   └── styles.css            # Global styles
-│   ├── images/
-│   │   ├── icon.svg              # App icon (placeholder)
-│   │   └── screenshots/          # App screenshots
-│   └── js/
-│       └── main.js               # Theme toggle & mobile menu
+│   ├── css/styles.css                      # Global styles
+│   ├── images/icon.png                     # App icon
+│   └── js/main.js                          # Theme toggle & mobile menu
 └── README.md
 ```
 
@@ -39,7 +35,7 @@ Simply open `index.html` in your browser to preview the site locally.
 
 ## Deployment
 
-Push to the `main` branch and GitHub Pages will automatically deploy the site.
+Push to the `master` branch and GitHub Pages will automatically deploy the site.
 
 ## Contact
 
