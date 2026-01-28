@@ -254,6 +254,73 @@ section {
   height: 24px;
 }
 
+/* ===== Store Badges ===== */
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-badge {
+  display: flex;
+  align-items: center;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.store-badge:hover {
+  transform: translateY(-2px);
+}
+
+.store-badge img {
+  height: 60px;
+  width: auto;
+}
+
+.store-badge--coming-soon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: default;
+  height: 60px;
+}
+
+.store-badge--coming-soon svg {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.store-badge__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.store-badge__soon {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.store-badge__store {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 480px) {
+  .store-badges {
+    flex-direction: column;
+  }
+}
+
 /* ===== Features Section ===== */
 .features {
   background-color: var(--bg-secondary);
