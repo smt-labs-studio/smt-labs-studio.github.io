@@ -321,6 +321,118 @@ section {
   }
 }
 
+/* ===== Screenshots Section ===== */
+.screenshots {
+  padding: 4rem 0 6rem;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  overflow: hidden;
+}
+
+.screenshots-fan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.screenshot {
+  position: absolute;
+  width: 200px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.screenshot--1 {
+  transform: rotate(-15deg) translateX(-280px);
+  z-index: 1;
+}
+
+.screenshot--2 {
+  transform: rotate(-5deg) translateX(-100px);
+  z-index: 2;
+}
+
+.screenshot--3 {
+  transform: rotate(5deg) translateX(100px);
+  z-index: 2;
+}
+
+.screenshot--4 {
+  transform: rotate(15deg) translateX(280px);
+  z-index: 1;
+}
+
+.screenshot:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+  .screenshots-fan {
+    height: 400px;
+  }
+
+  .screenshot {
+    width: 160px;
+    border-radius: 20px;
+  }
+
+  .screenshot--1 {
+    transform: rotate(-12deg) translateX(-200px);
+  }
+
+  .screenshot--2 {
+    transform: rotate(-4deg) translateX(-70px);
+  }
+
+  .screenshot--3 {
+    transform: rotate(4deg) translateX(70px);
+  }
+
+  .screenshot--4 {
+    transform: rotate(12deg) translateX(200px);
+  }
+}
+
+@media (max-width: 600px) {
+  .screenshots-fan {
+    height: 350px;
+  }
+
+  .screenshot {
+    width: 120px;
+    border-radius: 16px;
+  }
+
+  .screenshot--1 {
+    transform: rotate(-10deg) translateX(-140px);
+  }
+
+  .screenshot--2 {
+    transform: rotate(-3deg) translateX(-50px);
+  }
+
+  .screenshot--3 {
+    transform: rotate(3deg) translateX(50px);
+  }
+
+  .screenshot--4 {
+    transform: rotate(10deg) translateX(140px);
+  }
+}
+
 /* ===== Features Section ===== */
 .features {
   background-color: var(--bg-secondary);
