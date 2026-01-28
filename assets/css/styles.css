@@ -326,7 +326,7 @@ section {
   padding: 0 0 4rem;
   background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
   overflow: hidden;
-  margin-top: -2rem;
+  margin-top: -5rem;
 }
 
 .screenshots-fan {
