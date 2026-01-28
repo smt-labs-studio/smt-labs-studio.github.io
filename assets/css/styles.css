@@ -552,8 +552,9 @@ section {
 .hero .container > *:nth-child(5) { animation-delay: 0.5s; }
 
 /* ===== Studio Page ===== */
-.studio-hero {
-  min-height: 60vh;
+.apps--main {
+  padding-top: 120px;
+  min-height: calc(100vh - 150px);
 }
 
 .section-header {
